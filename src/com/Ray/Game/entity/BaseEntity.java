@@ -35,6 +35,6 @@ public abstract class BaseEntity {
 	
 	public abstract void update(GameContainer container, int delta) throws SlickException;
 	
-	public abstract viod render(GameContainer container, Graphics g) throws SlickException;
+	public abstract void render(GameContainer container, Graphics g) throws SlickException;
 	
 }
