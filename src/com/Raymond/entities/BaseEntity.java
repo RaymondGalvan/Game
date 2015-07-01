@@ -7,7 +7,7 @@ import org.newdawn.slick.SlickException;
 import com.Raymond.Game.Events.EventSystem;
 
 public abstract class BaseEntity extends EventSystem {
-	private final int zIndex;
+	protected int zIndex;
 	
 	public BaseEntity(int zIndex) {
 		this.zIndex = zIndex;

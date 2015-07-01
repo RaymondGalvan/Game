@@ -10,6 +10,7 @@ import com.Raymond.Game.Events.Event;
 import com.Raymond.Game.Events.EventHandler;
 import com.Raymond.Game.Events.EventSystem;
 import com.Raymond.entities.Box;
+import com.Raymond.entities.Pacman;
 
 /**
  * Contains all the code that makes events work. It should also be used to invoke and bind to "global" or "miscellaneous" events.
@@ -35,8 +36,19 @@ public class Game extends BasicGame {
 	public void init(GameContainer container) throws SlickException {
 		bindings = new InputBindings(container.getInput());
 		
-		EntityManager.instance.spawn(new Box(0, 100, 100, 25 , 25));
-		EntityManager.instance.spawn(new Box(-1, 110, 110, 25 , 25));
+		EntityManager.instance.spawn(new Pacman(100, 100, 100, 25 , 25));
+		EntityManager.instance.spawn(new ghost (25, 30, 40, 30, 55));
+		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
+		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
+		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
+		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
+		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
+		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
+		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
+		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
+		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
+		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
+		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
 	}
 
 	@Override
