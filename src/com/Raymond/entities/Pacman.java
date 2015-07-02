@@ -24,7 +24,7 @@ private Rectangle ghost;
 		super(zIndex);
 		Pacman = new Circle(f, g, 20, 20);
 		this.zIndex = zIndex; 
-		
+		CollisionSystem.getInstance()register(this);
 	}
 
 	@Override
