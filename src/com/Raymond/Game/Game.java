@@ -9,6 +9,7 @@ import org.newdawn.slick.SlickException;
 import com.Raymond.Game.Events.Event;
 import com.Raymond.Game.Events.EventHandler;
 import com.Raymond.Game.Events.EventSystem;
+import com.Raymond.Game.collision.CollisionSystem;
 import com.Raymond.Game.entities.Box;
 import com.Raymond.Game.entities.Pacman;
 
@@ -41,11 +42,13 @@ public class Game extends BasicGame {
 		EntityManager.instance.spawn(new Box(100, 400, 100, 25, 25));
 		EntityManager.instance.spawn(new Box(100, 300, 100, 25, 25));
 		EntityManager.instance.spawn(new Box(100, 500, 100, 25, 25));
+		EntityManager.instance.spawn(new Box(100, 600, 100, 50, 50));
 	}
 
 	@Override
 	public void update(GameContainer container, int delta) throws SlickException {
 		EntityManager.instance.__updateEntities(container, delta);
+		CollisionSystem.getInstance().update();
 	}
 	
 	/**

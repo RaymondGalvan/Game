@@ -19,6 +19,7 @@ public class Pacman extends BaseEntity implements Collidable {
 	private Circle Pacman;
 	private int velocityx;
 	private int velocityy;
+	private boolean isDead = false;
 
 	public Pacman(int zIndex, float f, float g, int width, int height) {
 		super(zIndex);
@@ -29,7 +30,7 @@ public class Pacman extends BaseEntity implements Collidable {
 		addEventListener("CollisionEvent", new EventHandler() {
 			@Override
 			public void handleEvent(Event e) {
-				
+				isDead = true;
 			}
 			
 		});
@@ -39,19 +40,19 @@ public class Pacman extends BaseEntity implements Collidable {
 	public void update(GameContainer container, int delta) throws SlickException {
 		Input in = container.getInput();
 		if (in.isKeyDown(Input.KEY_LEFT)) {
-			velocityx = - 2;
+			velocityx = - 3;
 			velocityy = 0;
 		}
 		if (in.isKeyDown(Input.KEY_RIGHT)) {
-			velocityx = 2;
+			velocityx = 3;
 			velocityy = 0;
 		}
 		if (in.isKeyDown(Input.KEY_UP)) {
-			velocityy = - 2;
+			velocityy = - 3;
 			velocityx = 0;
 		}
 		if (in.isKeyDown(Input.KEY_DOWN)) {
-			velocityy = 2;
+			velocityy = 3;
 			velocityx = 0;
 		}
 		
@@ -74,8 +75,10 @@ public class Pacman extends BaseEntity implements Collidable {
 
 	@Override
 	public void render(GameContainer container, Graphics g) throws SlickException {
-		g.setColor(Color.yellow);
-		g.fill(Pacman);
+		if(!isDead) {
+			g.setColor(Color.yellow);
+			g.fill(Pacman);
+		}
 
 	}
 
