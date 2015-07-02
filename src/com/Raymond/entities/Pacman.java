@@ -42,17 +42,17 @@ private Rectangle ghost;
 	if (in.isKeyDown(Input.KEY_DOWN)) {
 		Pacman.setY(Pacman.getY() + velocityy * speed + 2);
 	}
-	if (Pacman.getX() > 1000) {
+	if (Pacman.getX() > 590) {
 		Pacman.setX(0);
 	}
-	if (Pacman.getY() > 800) {
+	if (Pacman.getY() > 500) {
 		Pacman.setY(0);
 	}
 	if (Pacman.getX() < 0) {
-		Pacman.setX(1000);
+		Pacman.setX(590);
 	}
 	if (Pacman.getY() < 0) {
-		Pacman.setY(800);
+		Pacman.setY(500);
 	}
 		
 

@@ -37,18 +37,9 @@ public class Game extends BasicGame {
 		bindings = new InputBindings(container.getInput());
 		
 		EntityManager.instance.spawn(new Pacman(100, 100, 100, 25 , 25));
-		EntityManager.instance.spawn(new ghost (25, 30, 40, 30, 55));
-		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
-		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
-		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
-		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
-		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
-		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
-		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
-		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
-		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
-		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
-		EntityManager.instance.spawn(new ghost (10, 10, 10, 25 , 25));
+		EntityManager.instance.spawn(new Box(50, 50, 50, 10, 10));
+		EntityManager.instance.spawn(new Box(100, 400, 100, 25, 25));
+	
 	}
 
 	@Override
