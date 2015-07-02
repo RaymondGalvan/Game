@@ -9,8 +9,8 @@ import org.newdawn.slick.SlickException;
 import com.Raymond.Game.Events.Event;
 import com.Raymond.Game.Events.EventHandler;
 import com.Raymond.Game.Events.EventSystem;
-import com.Raymond.entities.Box;
-import com.Raymond.entities.Pacman;
+import com.Raymond.Game.entities.Box;
+import com.Raymond.Game.entities.Pacman;
 
 /**
  * Contains all the code that makes events work. It should also be used to invoke and bind to "global" or "miscellaneous" events.

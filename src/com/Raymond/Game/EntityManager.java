@@ -12,7 +12,7 @@ import org.newdawn.slick.SlickException;
 
 import com.Raymond.Game.Events.EventSystem;
 import com.Raymond.Game.Events.SpawnEvent;
-import com.Raymond.entities.BaseEntity;
+import com.Raymond.Game.entities.BaseEntity;
 
 /** 
  * Singleton (only one instance allowed) class in charge of managing entities.

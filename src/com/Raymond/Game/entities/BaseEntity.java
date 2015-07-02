@@ -1,4 +1,4 @@
-package com.Raymond.entities;
+package com.Raymond.Game.entities;
 
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;

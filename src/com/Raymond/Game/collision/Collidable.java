@@ -1,8 +1,10 @@
-package com.Raymond.collision;
+package com.Raymond.Game.collision;
 
 import org.newdawn.slick.geom.Shape;
 
-import com.nathan.funGame.events.Event;
+import com.Raymond.Game.Events.Event;
+
+
 
 public interface Collidable {
 	public Shape getCollisionBouds();
